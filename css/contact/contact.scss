@@ -1,0 +1,84 @@
+.contact {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  > * {
+    width: 48.5%;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+}
+
+.contact_map_btn {
+  display: flex;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b7b7b7;
+  button {
+    width: 100%;
+    padding: 8px 0;
+    background-color: #f7f7f7;
+    border: none;
+  }
+  button.active {
+    background-color: var(--primary1);
+    color: white;
+  }
+}
+
+.contact_adr {
+  h3 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.6rem;
+    color: #333;
+  }
+}
+
+.contact_form {
+  * {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0 0.75em;
+    height: 2.507em;
+    font-size: 0.97em;
+    border-radius: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+    margin: 5px 0;
+  }
+  textarea{
+    width: 100%;
+    padding-top: 0.7em;
+    min-height: 105px;
+    appearance: none;
+  }
+  button{
+    width: 30%;
+    background-color: var(--primary1);
+    color: white;
+    text-transform: uppercase;
+    &:hover{
+      background-color: var(--primary2);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact{
+    margin-top: 80px;
+    flex-direction: column;
+    > * {
+      width: 100%;
+    }
+  }
+  .contact_adr {
+    h3 {
+      text-align: center;
+    }
+  }
+}
